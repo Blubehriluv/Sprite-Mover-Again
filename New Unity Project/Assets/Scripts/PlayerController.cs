@@ -10,12 +10,11 @@ public class PlayerController : MonoBehaviour
     private Boolean left = false;
     private Boolean right = false;
 
-
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
 	{
-
-	}
+	    
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -141,8 +140,8 @@ public class PlayerController : MonoBehaviour
 	            down = false;
 	            left = false;
 	            right = true;
-	            
+
 	        }
-        }
-    }
+	    }
+	}
 }
