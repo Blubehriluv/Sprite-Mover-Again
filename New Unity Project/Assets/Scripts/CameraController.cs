@@ -14,27 +14,52 @@ public class CameraController : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update ()
-	{
-	    if (Input.GetKey(KeyCode.W))
-	    {
-	        tf.position = tf.position + Vector3.up * speed;
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+                tf.position = tf.position + Vector3.up;
+            }
+
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                tf.position = tf.position + Vector3.left;
+            }
+
+            if (Input.GetKeyDown(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+                tf.position = tf.position + Vector3.down;
+            }
+
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                tf.position = tf.position + Vector3.right;
+            }
         }
+        else
+        {
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+                tf.position = tf.position + Vector3.up * speed;
+            }
 
-	    if (Input.GetKey(KeyCode.A))
-	    {
-	        tf.position = tf.position + Vector3.left * speed;
-	    }
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                tf.position = tf.position + Vector3.left * speed;
+            }
 
-	    if (Input.GetKey(KeyCode.S))
-	    {
-	        tf.position = tf.position + Vector3.down * speed;
-	    }
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+                tf.position = tf.position + Vector3.down * speed;
+            }
 
-	    if (Input.GetKey(KeyCode.D))
-	    {
-	        tf.position = tf.position + Vector3.right * speed;
-	    }
-
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                tf.position = tf.position + Vector3.right * speed;
+            }
+        }
     }
+
 }

@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 	void Update () {
 
         //FOR THE USER TO MOVE UP
-	    if (Input.GetKeyDown(KeyCode.W))
+	    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
 	    {
 	        if (down == true)
 	        {
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //FOR THE USER TO MOVE DOWN
-	    if (Input.GetKeyDown(KeyCode.S))
+	    if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
 	    {
 	        if (up == true)
 	        {
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //FOR THE USER TO MOVE LEFT
-	    if (Input.GetKeyDown(KeyCode.A))
+	    if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
 	    {
 	        if (down == true)
 	        {
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
 	    }
 
         //FOR THE USER TO MOVE RIGHT
-	    if (Input.GetKeyDown(KeyCode.D))
+	    if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
 	    {
 	        if (down == true)
 	        {
