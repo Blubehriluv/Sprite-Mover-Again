@@ -18,22 +18,22 @@ public class CameraController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            if (Input.GetKeyDown(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 tf.position = tf.position + Vector3.up;
             }
 
-            if (Input.GetKeyDown(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 tf.position = tf.position + Vector3.left;
             }
 
-            if (Input.GetKeyDown(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 tf.position = tf.position + Vector3.down;
             }
 
-            if (Input.GetKeyDown(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 tf.position = tf.position + Vector3.right;
             }
@@ -61,5 +61,4 @@ public class CameraController : MonoBehaviour
             }
         }
     }
-
 }
