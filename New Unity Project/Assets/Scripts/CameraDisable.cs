@@ -15,6 +15,7 @@ public class CameraDisable : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+        //The movement of the camera will disable when the player movement disables
 	    if (Input.GetKeyDown(KeyCode.P))
 	    {
 	        camStop.enabled = !camStop.enabled;

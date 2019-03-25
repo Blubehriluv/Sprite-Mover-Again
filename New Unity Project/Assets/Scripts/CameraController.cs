@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    //Created Transform and Speed Variable for Designers
     private Transform tf;
-    public float xAngle, yAngle, zAngle;
     public float speed;
 
 	// Use this for initialization
@@ -16,6 +16,7 @@ public class CameraController : MonoBehaviour
 	// Update is called once per frame
     void Update()
     {
+        //WHEN USER PRESSES SHIFT, MOVE WITHOUT SPEED AT SINGULAR UNITS
         if (Input.GetKey(KeyCode.LeftShift))
         {
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
@@ -38,6 +39,8 @@ public class CameraController : MonoBehaviour
                 tf.position = tf.position + Vector3.right;
             }
         }
+
+        //WITHOUT SHIFT, THE PLAYER MOVES AS USUAL
         else
         {
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))

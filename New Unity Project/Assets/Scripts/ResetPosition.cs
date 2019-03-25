@@ -16,6 +16,7 @@ public class ResetPosition : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+        //Hitting space will reset the player's position to the center of the world
 	    if (Input.GetKey(KeyCode.Space))
 	    {
 	        transform.position = original;

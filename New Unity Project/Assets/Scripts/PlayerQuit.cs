@@ -11,6 +11,7 @@ public class PlayerQuit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //Allows the player to quit the game
 	    if (Input.GetKey(KeyCode.Escape))
 	    {
 	        Application.Quit();

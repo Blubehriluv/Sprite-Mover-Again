@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //This checks for what direction the player is facing
     private Boolean up = false;
     private Boolean down = true;
     private Boolean left = false;

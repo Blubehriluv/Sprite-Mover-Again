@@ -15,7 +15,7 @@ public class GamObjDisable : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-     
+    //Breaks the game by disabling the game object     
 	    if (Input.GetKeyDown(KeyCode.Q))
 	    {
             noPlay.SetActive(false);

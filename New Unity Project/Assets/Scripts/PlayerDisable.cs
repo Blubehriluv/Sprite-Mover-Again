@@ -15,6 +15,7 @@ public class PlayerDisable : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+        //Hitting P will disable the movement of the player
 	    if (Input.GetKeyDown(KeyCode.P))
 	    {
 	        playerStop.enabled = !playerStop.enabled;
