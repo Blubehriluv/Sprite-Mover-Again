@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Vuforia;
 
 public class ResetPosition : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class ResetPosition : MonoBehaviour
     void Start ()
 	{
 	    //original = gameObject.transform.position;
-	    original = new Vector3(0, 0, -1);
+	    original = new Vector3(0, 0, -2);
     }
 	
 	// Update is called once per frame
