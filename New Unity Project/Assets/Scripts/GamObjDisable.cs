@@ -18,7 +18,6 @@ public class GamObjDisable : MonoBehaviour
      
 	    if (Input.GetKeyDown(KeyCode.Q))
 	    {
-	       
             noPlay.SetActive(false);
         }
     }
