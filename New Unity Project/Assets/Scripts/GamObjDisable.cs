@@ -5,20 +5,21 @@ using UnityEngine;
 public class GamObjDisable : MonoBehaviour
 {
 
-    //public GameObject noPlay;
+    public GameObject noPlay;
 
 	// Use this for initialization
 	void Start ()
 	{
-	    //noPlay = GetComponent<GameObject>();
+	   
 	}
 	
 	// Update is called once per frame
 	void Update () {
+     
 	    if (Input.GetKeyDown(KeyCode.Q))
 	    {
-	        var ObjectToDeactivate = GameObject.Find("Player");
-	        ObjectToDeactivate.SetActiveRecursively(false);
+	       
+            noPlay.SetActive(false);
         }
     }
 }
